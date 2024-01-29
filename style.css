@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+h2 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.place {
+  font-size: 15px;
+  color: #8c97a6;
+  margin-bottom: 7px;
+}
+
+svg {
+  height: 40px;
+  width: 40px;
+  /* fill: black; */
+}
+button {
+  padding: 4px;
+  background-color: transparent;
+  border: none;
+  /* cursor: pointer; */
+  display: flex;
+  align-items: center;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.photo {
+  height: 300px;
+  border-radius: 20px;
+}
+
+.social-network,
+.hobbies {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.instagram:hover {
+  fill: #ea3576;
+  cursor: pointer;
+}
+.pexels:hover {
+  fill: #059377;
+  cursor: pointer;
+}
+.linkedin:hover {
+  fill: #2d64bc;
+  cursor: pointer;
+}
